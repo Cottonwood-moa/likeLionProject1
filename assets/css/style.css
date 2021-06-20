@@ -131,8 +131,8 @@ footer {
     grid-gap: 50px;
     grid-template-areas: 
     "section1_1 section1_2 section1_3"
-    "section2 section3 section4"
-    "section5_1 section5_2 section5_3";
+    "section2 section2 section4"
+    "section5_1 section5_2 section5_2";
     grid-template-rows: 50% 50% 50%;
 	grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
@@ -145,7 +145,7 @@ footer {
 #section1_1{
     background: rgb(245, 244, 244);
     grid-area: section1_1;
-    /* overflow-y: scroll; */
+    overflow-y: hidden;
     overflow-x: hidden;
     word-break:break-all;
     text-align: center;
@@ -154,7 +154,7 @@ footer {
 #section1_2{
     background: rgb(245, 244, 244);
     grid-area: section1_2;
-    /* overflow-y: scroll; */
+    overflow-y: hidden;
     overflow-x: hidden;
     word-break:break-all;
     text-align: center;
@@ -163,7 +163,7 @@ footer {
 #section1_3{
     background: rgb(245, 244, 244);
     grid-area: section1_3;
-    /* overflow-y: scroll; */
+    overflow-y: hidden;
     overflow-x: hidden;
     word-break:break-all;
     text-align: center;
@@ -174,12 +174,13 @@ footer {
 #section2{
     background: rgb(245, 244, 244);
     grid-area: section2;
-    /* overflow-y: scroll; */
+    overflow-y: hidden;
     overflow-x: hidden;
-    word-break:break-all;
-    text-align: center;
+    /* word-break:break-all; */
     border-radius: 50px;
 }
+
+
 #section3{
     background: rgb(245, 244, 244);
     grid-area: section3;
@@ -210,19 +211,9 @@ footer {
 #section5_2{
     background: rgb(245, 244, 244);
     grid-area: section5_2;
-    /* overflow-y: scroll; */
+    overflow-y: hidden;
     overflow-x: hidden;
     word-break:break-all;
-    text-align: center;
-    border-radius: 50px;
-}
-#section5_3{
-    background: rgb(245, 244, 244);
-    grid-area: section5_3;
-    /* overflow-y: scroll; */
-    overflow-x: hidden;
-    word-break:break-all;
-    text-align: center;
     border-radius: 50px;
 }
 
