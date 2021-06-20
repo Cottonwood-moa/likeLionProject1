@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    div.clickEffect{
+      position:fixed;
+      box-sizing:border-box;
+      border-style:solid;
+      border-color:#000000;
+      border-radius:50%;
+      animation:clickEffect 0.4s ease-out;
+      z-index:99999;
+    }
+    @keyframes clickEffect{
+      0%{
+        opacity:1;
+        width:0.5em; height:0.5em;
+        margin:-0.25em;
+        border-width:0.5rem;
+      }
+      100%{
+        opacity:0.2;
+        width:15em; height:15em;
+        margin:-7.5em;
+        border-width:0.03rem;
+      }
+    }
+    </style>
+  <!-- maps  -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+  <link rel="stylesheet"
+    href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+  <script
+    src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="assets\css\em_rad.css">
+  <link rel="stylesheet" href="assets\css\em_use.css">
+  <link rel="stylesheet" href="assets\css\em_heatmap.css">
+  <link rel="stylesheet" href="assets\css\seoul_em.css">
+  <link rel="stylesheet" href="assets\css\style.css">
+  <!-- ㅡㅡㅡㅡㅡ  -->
+  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+  <!-- jupyter -->
+
+  <title>Document</title>
+  <script src="/js/pdfobject.js"></script>
+<script>PDFObject.embed("/pdf/sample-3pp.pdf", "#example1");</script>
+<style>
+  .pdfobject-container { height: 30rem; border: 1rem solid rgba(0,0,0,.1); }
+  </style>
+</head>
+
+<body>
+  <div id="container2">
+    <div class="header">
+      <h1>
+        <a href="index.html" style="margin: 20px;">Team 1</a>
+      </h1>
+
+    
+    </div>
+    <div id="example1"></div>
+    <!-- 1 -->
+    <div id="section1_1" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <h1> <a href="semi_project.html"> Title 1</h1></a>
+      <img src="assets\images\day.png" class="chart_day">
+      <div class="description">
+
+
+      </div>
+    </div>
+    <div id="section1_2" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <h1> <a href="semi_project.html"> Title 2</h1></a>
+      <img src="assets\images\day.png" class="chart_day">
+      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+      </div>
+    </div>
+    <div id="section1_3" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <h1> <a href="semi_project.html"> Title 3</h1></a>
+      <img src="assets\images\day.png" class="chart_day">
+      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+      </div>
+    </div>
+    <!-- 2 -->
+    <div id="section2" class="scroll_bar" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
+      <h1> <a href="semi_project.html"> Title 4</h1></a>
+      <img src="assets\images\day.png" class="chart_day">
+      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+      </div>
+    </div>
+    <div id="section3" class="scroll_bar" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
+      <h1> <a href="semi_project.html"> Title 5</h1></a>
+      <img src="assets\images\day.png" class="chart_day">
+      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.</div>
+    </div>
+    <div id="section4" class="scroll_bar" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
+      <h1> <a href="semi_project.html"> Title 6</h1></a>
+      <img src="assets\images\day.png" class="chart_day">
+      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.</div>
+    </div>
+<!-- 3 -->
+     <div id="section5_1" class="scroll_bar" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
+      <h1> <a href="semi_project.html"> Title 7</h1></a>
+      <img src="assets\images\day.png" class="chart_day">
+      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+      </div>
+    </div>
+    <div id="section5_2" class="scroll_bar" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
+      <h1> <a href="semi_project.html"> Title 8</h1></a>
+      <img src="assets\images\day.png" class="chart_day">
+      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+      </div>
+    </div>
+    <div id="section5_3" class="scroll_bar" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
+      <h1> <a href="semi_project.html"> Title 9</h1></a>
+      <img src="assets\images\day.png" class="chart_day">
+      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+      </div>
+    </div>
+  </div>
+  <h1 class="maps_title" data-aos="zoom-in" data-aos-delay="100"
+  data-aos-duration="800"><a href="semi_project.html" > Maps</a></h1>
+  <div id="container1">
+    <!-- Note: This example only works with Windows Insider Preview Builds 16237+. -->
+
+    <header class="map_button">
+      <div class="map_button1 hover_image" onclick="show_seoul_em()">
+        <span class="text">
+          <h1>위치정보</h1>
+        </span>
+        <img src="assets\images\seoul_em.png" class="map_image" data-aos="fade-down" data-aos-delay="100"
+          data-aos-duration="500">
+      </div>
+
+      <div class="map_button2 hover_image" onclick="show_em_use()">
+        <span class="text">
+          <h1>이용현황</h1>
+        </span>
+        <img src="assets\images\em_use.png" class="map_image" data-aos="fade-down" data-aos-delay="200"
+          data-aos-duration="500">
+      </div>
+
+      <div class="map_button3 hover_image" onclick="show_em_rad()">
+        <span class="text">
+          <h1>평균범위</h1>
+        </span>
+        <img src="assets\images\em_rad.png" class="map_image" data-aos="fade-down" data-aos-delay="200"
+          data-aos-duration="500">
+      </div>
+
+      <div class="map_button4 hover_image" onclick="show_em_heatmap()">
+        <span class="text">
+          <h1>분산도</h1>
+        </span>
+        <img src="assets\images\em_heatmap.png" class="map_image" data-aos="fade-down" data-aos-delay="100"
+          data-aos-duration="500">
+      </div>
+
+    </header>
+
+    <section>
+      <!-- point -->
+      <div class="folium-map" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+        id="map_ef08ee6db78c491d8f2b4ae35d2d5b36">
+      </div>
+      <!-- em_use -->
+      <div class="folium-map" id="map_7055c322c99c407db76e4538a87d3811"></div>
+      <!-- em_rad -->
+      <div class="folium-map" id="map_9359b393552146b5b49ac6130f91b76a"></div>
+      <!-- heatmap -->
+      <div class="folium-map" id="map_17249d550ebd43bb94ad6c3859afbcc7"></div>
+
+    </section>
+
+    <footer></footer>
+
+  </div>
+  <!-- <div
+  data-aos="zoom-in-up"
+  data-aos-offset="200"
+  data-aos-delay="50"
+  data-aos-duration = " 1000 "
+  data-aos-easing="ease-in-out"
+  data-aos-mirror="true"
+  data-aos-once="false"
+  data-aos-anchor-placement="top-center"
+>
+</div> -->
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  </script>
+
+  <script type="text/javascript">
+    function clickEffect(e){
+      var d=document.createElement("div");
+      d.className="clickEffect";
+      d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+      document.body.appendChild(d);
+      d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+    }
+    document.addEventListener('click',clickEffect);
+    </script>
+
+  <script src="assets\js\em_rad.js"></script>
+  <script src="assets\js\em_use.js"></script>
+  <script src="assets\js\em_heatmap.js"></script>
+  <script src="assets\js\seoul_em.js"></script>
+  <script src="assets\js\main.js"></script>
+</body>
+
+</html>
