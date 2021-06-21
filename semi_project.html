@@ -13118,16 +13118,8 @@ a:visited { color:#000000; text-decoration: none;}
 a:hover { color:#000000; text-decoration: none;}
 
 a:active { color:#000000; text-decoration: none;}
-
-.circular-menu {
-    z-index: 100;
-    position: fixed;
-    bottom: 5em;
-    right: 1em;
-    opacity: 0.7;
-  }
-  
-  .circular-menu .floating-btn {
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+.circular-menu .floating-btn {
     display: block;
     width: 3.5em;
     height: 3.5em;
@@ -13222,6 +13214,10 @@ a:active { color:#000000; text-decoration: none;}
   .circular-menu.active .menu-item:nth-child(4) {
     transform: translate3d(-7em,1em,0);
   }
+  .circular-menu.active .menu-item:nth-child(5) {
+    transform: translate3d(-8em,4em,0);
+  }
+  
   
   /**
    * The other theme for this menu
@@ -13229,7 +13225,7 @@ a:active { color:#000000; text-decoration: none;}
   
   .circular-menu.circular-menu-left {
     right: auto; 
-    left: 1em;
+    left: 6.5em;
   }
   
   .circular-menu.circular-menu-left .floating-btn {
@@ -13259,6 +13255,29 @@ a:active { color:#000000; text-decoration: none;}
   .circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
     transform: translate3d(7em,1em,0);
   }
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(5) {
+    transform: translate3d(5em,5.3em,0);
+  }
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(6) {
+    transform: translate3d(1em,7.3em,0);
+  }
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(7) {
+    transform: translate3d(-3em,6.3em,0);
+  }
+  .circular-menu.circular-menu-left.active .menu-item:nth-child(8) {
+    transform: translate3d(-6em,3.3em,0);
+}
+.circular-menu.circular-menu-left.active .menu-item:nth-child(9) {
+    transform: translate3d(-7em,-0.9em,0);
+}
+
+.circular-menu {
+    z-index: 100;
+    bottom: 5em;
+    right: 1em;
+    bottom: 55em;
+    position: fixed;
+  }
   .scrollup {
     bottom: 3.0em;
     cursor: pointer;
@@ -13269,25 +13288,29 @@ a:active { color:#000000; text-decoration: none;}
     z-index: 100;
     opacity: 0.5;
   }
-
-
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+<!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
     </head>
 <body>
-  <!--  -->
+ <!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
   <img class="scrollup" src="assets\images\up.png">
-  <div id="circularMenu1" class="circular-menu circular-menu-left">
+  <div id="circularMenu1" class="circular-menu circular-menu-left" data-aos="zoom-in-right" data-aos-delay="1000" data-aos-duration="1500">
 
     <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
       <i class="fa fa-bars"></i>
     </a>
   
     <menu class="items-wrapper">
-      <a href="#" class="menu-item fa fa-home"></a>
-      <a href="#" class="menu-item fa fa-user"></a>
+      <a href="index.html" class="menu-item fa fa-home"></a>
+      <a href="semi_project.html" class="menu-item fa fa-ambulance"></a>
       <a href="#" class="menu-item fa fa-pie-chart"></a>
-      <a href="#" class="menu-item fa fa-cog"></a>
+      <a href="#" class="menu-item fa fa-pie-chart"></a>
+      <a href="#" class="menu-item fa fa-pie-chart"></a>
+      <a href="#" class="menu-item fa fa-pie-chart"></a>
+      <a href="#" class="menu-item fa fa-pie-chart"></a>
+      <a href="#" class="menu-item fa fa-pie-chart"></a>
+      <a href="#" class="menu-item fa fa-pie-chart"></a>
     </menu>
   
   </div>
@@ -13302,7 +13325,11 @@ a:active { color:#000000; text-decoration: none;}
       $("html, body").stop().animate({ scrollTop: 0 });
   });
 });</script>
-<!--  -->
+
+
+</script>
+
+<!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
