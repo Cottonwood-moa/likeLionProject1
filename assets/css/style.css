@@ -463,18 +463,33 @@ span{
 }
 
 @media (max-width: 1000px) {
+  body{
+    display: flex;
+    height: 200px;
+    background-color: rgb(83, 82, 82);
+  }
   .maps{display: none;}
   .header{display: none;}
   .header2{display: none;}
   .sidenav{display: none;}
   .scrollup{display: none;}
-  .container1{display: none;}
+  #container1{display: none;}
   .folium-map{display: none;}
-  .container2{display: none;}
+  #container2{display: none;}
   .maps_title{display: none;}
   .map_button{display: none;}
-  ::selection{display: none;}
-  .mobile{display: inline;}
+  .mobile{
+    font-size: 30px; 
+    font-weight: bold; 
+    color: white;
+    margin: 0 auto;
+    margin-top: 50%;
+    display: inline;
+  }
+  .scrollup{
+    display: none;
+  }
+
 }
 
 
