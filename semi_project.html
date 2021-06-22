@@ -13206,6 +13206,22 @@ cursor: pointer;
 body{
   margin-top: 100px;
 }
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: cornflowerblue;
+    border-radius: 12px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  body::-webkit-scrollbar-track {
+	height: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+  }
 
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
