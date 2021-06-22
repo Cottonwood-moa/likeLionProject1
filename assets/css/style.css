@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: inherit;
+    font-family: 'Jua', sans-serif;
 }
 
 .header {
@@ -109,7 +109,7 @@ a:hover { color:#000000; text-decoration: none;}
 a:active { color:#000000; text-decoration: none;}
 
 #container1 { 
-  font-family: inherit;
+  font-family: 'Jua', sans-serif;
 	display: grid;
 	grid-template-areas: 
     "header header header"
@@ -512,7 +512,7 @@ span{
 }
 
 .map_text{
-  font-family: inherit;
+  font-family: 'Jua', sans-serif;
   font-size: 30px;
   font-weight: bold;
   color: #6d6d6d;
