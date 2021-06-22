@@ -117,7 +117,7 @@ a:active { color:#000000; text-decoration: none;}
 	grid-template-areas: 
     "header header header"
     "nav section aside";
-	grid-template-rows: 12% 1fr;
+	grid-template-rows: 20% 1fr;
 	grid-template-columns:1fr 92% 1fr;
   background: rgb(245, 244, 244);
 	grid-gap: 30px;
@@ -165,23 +165,24 @@ footer {
     margin-top: 40px;
     background-color: white;
     line-height: 6vw;
+    cursor: pointer;
 }
 .map_button1{
     /* grid-area: map1; */
-    cursor: pointer;
     margin-left: 50px;
+    height: 6vw;
 }
 .map_button2{
     /* grid-area: map2; */
-    cursor: pointer;
+    height: 6vw;
 }
 .map_button3{
     /* grid-area: map3; */
-    cursor: pointer;
+    height: 6vw;
 }
 .map_button4{
     /* grid-area: map4; */
-    cursor: pointer;
+    height: 6vw;
 }
 .bubble-bottom {
   display: inline-block;
