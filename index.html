@@ -2,35 +2,39 @@
 <html lang="en">
 
 <head>
-  
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
-    div.clickEffect{
-      position:fixed;
-      box-sizing:border-box;
-      border-style:solid;
-      border-color:#000000;
-      border-radius:50%;
-      animation:clickEffect 0.4s ease-out;
-      z-index:99999;
+    div.clickEffect {
+      position: fixed;
+      box-sizing: border-box;
+      border-style: solid;
+      border-color: #000000;
+      border-radius: 50%;
+      animation: clickEffect 0.4s ease-out;
+      z-index: 99999;
     }
-    @keyframes clickEffect{
-      0%{
-        opacity:1;
-        width:0.5em; height:0.5em;
-        margin:-0.25em;
-        border-width:0.5rem;
+
+    @keyframes clickEffect {
+      0% {
+        opacity: 1;
+        width: 0.5em;
+        height: 0.5em;
+        margin: -0.25em;
+        border-width: 0.5rem;
       }
-      100%{
-        opacity:0.2;
-        width:15em; height:15em;
-        margin:-7.5em;
-        border-width:0.03rem;
+
+      100% {
+        opacity: 0.2;
+        width: 15em;
+        height: 15em;
+        margin: -7.5em;
+        border-width: 0.03rem;
       }
     }
-    </style>
+  </style>
   <!-- maps  -->
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
@@ -68,16 +72,52 @@
   <link rel="icon" href="assets\images\icon.png" />
   <title>Team 1</title>
   <script src="/js/pdfobject.js"></script>
-<script>PDFObject.embed("/pdf/sample-3pp.pdf", "#example1");</script>
-<style>
-  .pdfobject-container { height: 30rem; border: 1rem solid rgba(0,0,0,.1); }
+  <script>PDFObject.embed("/pdf/sample-3pp.pdf", "#example1");</script>
+  <style>
+    .pdfobject-container {
+      height: 30rem;
+      border: 1rem solid rgba(0, 0, 0, .1);
+    }
   </style>
-  
+
 </head>
 
 <body>
-  
-  <div id="circularMenu1" class="circular-menu circular-menu-left" data-aos="zoom-in-right" data-aos-delay="1000" data-aos-duration="1500">
+  <div class="header">
+    <div style="display: flex;justify-content: flex-end;">
+      <div class="team_name" style="background-color: rgb(154, 247, 101);">용민</div>
+      <div class="team_name" style="background-color: dodgerblue;">준동</div>
+      <div class="team_name" style="background-color: rgb(255, 176, 30);">건우</div>
+      <div class="team_name" style="background-color: rgb(41, 248, 203);">정현</div>
+      <div class="team_name" style="margin-right:100px; background-color:rgb(201, 109, 255);">현정</div>
+    </div>
+  </div>
+  <div class="header2">Team 1</div>
+  <div class="sidenav">
+    <div class="side_button bubble-float-left" style="width: 150px; height: 50px;"></div>
+    <div class="side_button bubble-float-left" style="width: 120px; height: 50px; background-color: dodgerblue; "><a
+        href=""></a></div>
+
+    <div class="side_button bubble-float-left " style=" height: 50px; background-color: rgb(75, 154, 233);"><a
+        href="index.html" class="side_name" style="color: white;">Home</a>
+    </div>
+    <div class="side_button bubble-float-left" style=" height: 50px; background-color: #fa6d6d"><a
+        href="semi_project.html" class="side_name" style="color: white;">Maps</a></div>
+    <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(224, 72, 230);"><a
+        href="junghyun.html" class="side_name" style="color: white;">Cell 1</a></div>
+    <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(224, 240, 83); "><a href="yongmin.html"
+        class="side_name" style="color: white;">Cell 2</a></div>
+    <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(118, 68, 236); "><a href="ER_Transportation.html"
+        class="side_name" style="color: white;">Cell 3</a></div>
+    <div class="side_button bubble-float-left" style=" height: 50px; background-color:  rgb(91, 236, 62);"><a href=""
+        class="side_name" style="color: white;">Cell 4</a></div>
+    <!-- <a rel="bubble-float-left" class="button bubble-float-left">Bubble Float Left</a> -->
+    <!-- <img class="side_button" src="assets\images\map.png">
+    <img class="side_button" src="assets\images\map.png">
+    <img class="side_button" src="assets\images\map.png">
+    <img class="side_button" src="assets\images\map.png"> -->
+  </div>
+  <!-- <div id="circularMenu1" class="circular-menu circular-menu-left" data-aos="zoom-in-right" data-aos-delay="1000" data-aos-duration="1500">
 
     <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
       <i class="fa fa-bars"></i>
@@ -97,124 +137,49 @@
     </menu>
   
   </div>
-  
-  
+   -->
+
   <img class="scrollup" src="assets\images\up.png">
-  <div id="container2">
-    <div id="example1"></div>
-    <!-- 1 -->
-    <div id="section1_1" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
-      <h1> <a href="semi_project.html"> Title 1</h1></a>
-      <img src="assets\images\day.png" class="chart_day">
-      <div class="description">
-
-
-      </div>
-    </div>
-    <div id="section1_2" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
-      <h1> <a href="semi_project.html"> Title 2</h1></a>
-      <img src="assets\images\day.png" class="chart_day">
-      <div class="description">
-
-      </div>
-    </div>
-    <div id="section1_3" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
-      <h1> <a href="semi_project.html"> Title 3</h1></a>
-      <img src="assets\images\pie.png" class="chart_day">
-      <div class="description">
-
-      </div>
-    </div>
-
-    <!-- 2 -->
-    <div id="section2" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
-      <h1> <a href="semi_project.html" style="margin-left:50px;"> Title 4</h1></a>
-      <div class="flex">
-      <img src="assets\images\day.png" class="chart_day">
-      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
-        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
-        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
-        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-      </div>
-    </div>
-    </div>
-   
-    <div id="section4" class="scroll_bar" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
-      <h1> <a href="semi_project.html"> Title 5</h1></a>
-      <img src="assets\images\pie.png" class="chart_day">
-      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
-        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
-        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
-        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
-        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
-        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
-        quotes and other items. HTML elements are delineated by tags, written using angle brackets.</div>
-    </div>
-<!-- 3 -->
-     <div id="section5_1" class="scroll_bar" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
-      <h1> <a href="semi_project.html"> Title 6</h1></a>
-      <img src="assets\images\pie.png" class="chart_day">
-      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
-        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
-        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
-        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
-        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
-        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
-        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-      </div>
-    </div>
-    <div id="section5_2" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="800">
-      <h1> <a href="semi_project.html" style="margin-left:50px;"> Title 7</h1></a>
-      <div style="display: flex;">
-      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
-        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
-        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
-        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-      </div>
-      <img src="assets\images\day.png" class="chart_day">
-    </div>
-    </div>
-  </div>
-  <h1 class="maps_title" data-aos="zoom-in" data-aos-delay="100"
-  data-aos-duration="800"><a href="semi_project.html" > Maps</a></h1>
+  <h1 class="maps_title" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800"><a href="semi_project.html">
+      Maps</a></h1>
   <div id="container1">
     <!-- Note: This example only works with Windows Insider Preview Builds 16237+. -->
 
     <header class="map_button">
-      <div class="map_button1 hover_image" onclick="show_seoul_em()">
-        <span class="text">
-          <h1>위치정보</h1>
-        </span>
-        <img src="assets\images\seoul_em.png" class="map_image" data-aos="fade-down" data-aos-delay="100"
-          data-aos-duration="500">
+      <div class="map_button1 " onclick="show_seoul_em()">
+        <div class="map_image" data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">
+          <div class="bubble-bottom" style="display: flex; justify-content: space-between;">
+            <img class="map_icon" src="assets\images\placeholder.png" alt="">
+            <span class="map_text">Point</span>
+          </div>
+        </div>
       </div>
 
-      <div class="map_button2 hover_image" onclick="show_em_use()">
-        <span class="text">
-          <h1>구별이용도</h1>
-        </span>
-        <img src="assets\images\em_use.png" class="map_image" data-aos="fade-down" data-aos-delay="200"
-          data-aos-duration="500">
+      <div class="map_button2" onclick="show_em_use()">
+        <div class="map_image" data-aos="fade-down" data-aos-delay="200" data-aos-duration="500">
+          <div class="bubble-bottom" style="display: flex; justify-content: space-between;">
+            <img class="map_icon" src="assets\images\polygon.png" alt="">
+            <span class="map_text">Polygon</span>
+          </div>
+        </div>
       </div>
+      <div class="map_button3" onclick="show_em_rad()">
+        <div class="map_image" data-aos="fade-down" data-aos-delay="200" data-aos-duration="500">
+          <div class="bubble-bottom" style="display: flex; justify-content: space-between;">
+            <img class="map_icon" src="assets\images\circle.png" alt="">
+            <span class="map_text">Circle</span>
 
-      <div class="map_button3 hover_image" onclick="show_em_rad()">
-        <span class="text">
-          <h1>범위</h1>
-        </span>
-        <img src="assets\images\em_rad.png" class="map_image" data-aos="fade-down" data-aos-delay="200"
-          data-aos-duration="500">
+          </div>
+        </div>
       </div>
-
-      <div class="map_button4 hover_image" onclick="show_em_heatmap()">
-        <span class="text">
-          <h1>분산도</h1>
-        </span>
-        <img src="assets\images\em_heatmap.png" class="map_image" data-aos="fade-down" data-aos-delay="100"
-          data-aos-duration="500">
+      <div class="map_button4" onclick="show_em_heatmap()">
+        <div class="map_image" data-aos="fade-down" data-aos-delay="100" data-aos-duration="500">
+          <div class="bubble-bottom" style="display: flex; justify-content: space-between;">
+            <img class="map_icon" src="assets\images\rainbow-flag.png" alt="">
+            <span class="map_text">Heatmap</span>
+          </div>
+        </div>
       </div>
-
     </header>
 
     <section>
@@ -231,11 +196,171 @@
 
     </section>
 
-    <footer></footer>
+
 
   </div>
+  <div id="container2">
+    <div id="example1"></div>
+    <!-- 1 -->
+    <div id="section1_1" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <img src="assets\images\junghyun2.png" class="chart_day">
+      <div class="description">
+        <div style="display: flex;justify-content: space-between;">
+          <span>성별</span><span>남자</span><span>여자</span><span>계</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>질병</span><span>65.657</span><span>71.152</span><span>68.366</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>교통사고</span><span>5.041</span><span>3.132</span><span>4.100</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>추락</span><span>1.868</span><span>1.375</span><span>1.625</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>미끄러짐</span><span> 4.923</span><span>4.849</span><span>4.886</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>부딪힘</span><span>6.483</span><span>3.879</span><span>5.199</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>베임찔림</span><span>4.694</span><span>3.653</span><span>4.181</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>기계</span><span>0.190</span><span>0.073</span><span>0.132</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>화상</span><span>1.003</span><span>1.223</span><span>1.112</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>익수</span><span>0.024</span><span>0.014</span><span>0.019</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>중독</span><span>0.430</span><span>0.563</span><span>0.496</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>질식</span><span>0.061</span><span>0.057</span><span>0.059</span>
+        </div>
 
+      </div>
+    </div>
+    <div id="section1_2" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <img src="assets\images\junghyun1.png" class="chart_day">
+      <div class="description">
+        <div style="display: flex;justify-content: space-between;">
+          <span>성별</span><span>남자</span><span>여자</span><span>계</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>질병</span><span>69.480</span><span>73.162</span><span>71.329</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>교통사고</span><span>4.030</span><span>2.577</span><span>3.300</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>추락</span><span>1.928</span><span>1.475</span><span>1.700</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>미끄러짐</span><span>4.913</span><span>5.115</span><span>5.014</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>부딪힘</span><span>6.483</span><span>4.048</span><span>5.272</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>베임찔림</span><span>3.997</span><span>3.305</span><span>3.650</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>기계</span><span>0.231</span><span>0.065</span><span>0.147</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>화상</span><span>0.559</span><span>0.717</span><span>0.639</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>익수</span><span>0.020</span><span>0.012</span><span>0.016</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>중독</span><span>0.425</span><span>0.644</span><span>0.535</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;">
+          <span>질식</span><span>0.058</span><span>0.053</span><span>0.056</span>
+        </div>
+      </div>
+    </div>
+    <div id="section1_3" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <h1> <a href="semi_project.html"></h1></a>
+      <!-- <img src="assets\images\pie.png" class="chart_day"> -->
+      <div class="description" style="font-size: 20px;">
+        <li>내원율 중 질병으로 인한 응급실 내원이 남녀 평균이 15년도, 19년도 각 68.3%, 71.3% 라는 압도적인 비율을 차지하고 있음을 알 수 있음</li><br>
+        <li>이에 따라 질병을 제외하고 남녀를 구분하여 bar chart로 나타내었음</li><br>
+        <li>두 해의 데이터 모두 비슷한 양상을 보이며, '교통사고', '부딪힘', '베임/찔림', '기계' 등의 사유로 응급실을 방문하는 비율은 남성이 높았으며, '화상', '중독', '진료 외 방문'
+          등의 사유로 응급실을 방문하는 비율은 여성에게서 더 많이 나타났음</li><br>
+        <li>stack barmode를 사용하여 남녀를 합쳐 쌓아 올린 bar chart에서는 어떤 그림이 나타나는지도 그려보았음</li><br>
+        <li>2019년 질병으로 인한 내원율은 남녀를 합하여 100만명이 넘는 수치가 확인되었음</li><br>
+        <li>2019년 모든 내원 사유의 합계를 보았을 때에도 역시 15년도에 비해 증가하여 140만명을 넘는 것을 확인할 수 있었음</li>
+        <li>하지만, 서울특별시 인구는 2010년 부터 꾸준히 감소하였다.</li>
+        <li>응급실 수가 늘어나 접근성이 용이해졌거나, 구급차(응급차) 수 증가 및 서울시 내 교통편의 발달이 있었을 수 있다.</li>
+      </div>
+    </div>
 
+    <!-- 2 -->
+    <div id="section2" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <div class="flex">
+        <img src="assets\images\yongmin.png" class="chart_day">
+        <div class="description">
+          HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+          other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to
+          create
+          structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+          quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+          HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+          other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to
+          create
+          structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+          quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        </div>
+      </div>
+    </div>
+
+    <div id="section4" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <img src="assets\images\yongmin2.png" class="chart_day">
+      <div class="description">HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+        other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+        quotes and other items. HTML elements are delineated by tags, written using angle brackets.</div>
+    </div>
+    <!-- 3 -->
+    <div id="section5_1" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <img src="assets\images\jun.png" class="chart_day" style="height: 43vh;">
+      <div class="description">
+      </div>
+    </div>
+    <div id="section5_2" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <img src="assets\images\jun2.png" class="chart_day" style="height: 43vh;">
+      <div class="description">
+      </div>
+
+    </div>
+    <div id="section5_3" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <!-- <img src="assets\images\day.png" class="chart_day"> -->
+      <div class="description" style="font-size: 20px;">
+        <li> 최초 데이터 자료를 통해, 성별과 나이별 구분을 하는 것이 특정 교통 수단을 사용하는 것과 연결할 때 크게 유의미한 점을 찾지 못하였기 때문에 성별과 나이 구분은 제외함. (성별이 다르고
+          나이가 다르다고 특정 교통 수단을 더 이용하는 것이 아니었다.)</li><br>
+        <li>2015년과 2019년의 응급실 교통수단을 비교 하였을때, TOP 5에 비하여 TOP 5를 제외한 나머지 교통수단에서는 특히 큰 차이점을 느끼기 어려워 Pie chart 에
+          percentage(%)를 적용하여 TOP 5 교통수단만을 시각화를 하였음</li><br>
+        <li>
+          Pie chart 에서 한 눈에 구별할 수 있는 것 처럼, 대부분의 이용자들이 자가용으로 응급실까지 이동하는 것을 알 수 있다.
+        </li><br>
+        <li>구급차(119 구급차 + 기타 구급차 + 의료 기관 구급차) 이용의 비율이 25% -> 27% 로 소폭 상승한 결과를 확인할 수 있었고, 이에 반해 자동차(자가용)과 도보 이동자는 각 1%씩
+          소폭 감소한 것을 확인 하였다.</li><br>
+        <li>이를 통해, 15년도와 비교하여 자동차와 도보 이용객의 일부가 19년에는 조금 더 구급차를 이용할 수 있게 된 것으로 추측할 수 있다.(2019년 서울 의료 응급수단이 발전 한 것 이라는 해석도
+          가능할 것 같다)</li>
+      </div>
+    </div>
+  </div>
+  <footer class="blank"></footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -244,15 +369,15 @@
   </script>
 
   <script type="text/javascript">
-    function clickEffect(e){
-      var d=document.createElement("div");
-      d.className="clickEffect";
-      d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+    function clickEffect(e) {
+      var d = document.createElement("div");
+      d.className = "clickEffect";
+      d.style.top = e.clientY + "px"; d.style.left = e.clientX + "px";
       document.body.appendChild(d);
-      d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+      d.addEventListener('animationend', function () { d.parentElement.removeChild(d); }.bind(this));
     }
-    document.addEventListener('click',clickEffect);
-    </script>
+    document.addEventListener('click', clickEffect);
+  </script>
 
   <script src="assets\js\em_rad.js"></script>
   <script src="assets\js\em_use.js"></script>

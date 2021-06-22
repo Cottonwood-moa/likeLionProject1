@@ -13119,165 +13119,7 @@ a:hover { color:#000000; text-decoration: none;}
 
 a:active { color:#000000; text-decoration: none;}
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
-.circular-menu .floating-btn {
-    display: block;
-    width: 3.5em;
-    height: 3.5em;
-    border-radius: 50%;
-    background-color: hsl(4, 98%, 60%);
-    box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);  
-    color: hsl(0, 0%, 100%);
-    text-align: center;
-    line-height: 3.9;
-    cursor: pointer;
-    outline: 0;
-  }
-  
-  .circular-menu.active .floating-btn {
-    box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);
-  }
-  
-  .circular-menu .floating-btn:active {
-    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);
-  }
-  
-  .circular-menu .floating-btn i {
-    font-size: 1.3em;
-    transition: transform .2s;  
-  }
-  
-  .circular-menu.active .floating-btn i {
-    transform: rotate(-45deg);
-  }
-  
-  .circular-menu:after {
-    display: block;
-    content: ' ';
-    width: 3.5em;
-    height: 3.5em;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -2;
-    background-color: hsl(4, 98%, 60%);
-    transition: all .3s ease;
-  }
-  
-  .circular-menu.active:after {
-    transform: scale3d(5.5, 5.5, 1);
-    transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
-  }
-  
-  .circular-menu .items-wrapper {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .circular-menu .menu-item {
-    position: absolute;
-    top: .2em;
-    right: .2em;
-    z-index: -1;
-    display: block;
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    font-size: 1em;
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 3;
-    background-color: hsla(0,0%,0%,.1);
-  }
-  
-  .circular-menu .menu-item:hover {
-    background-color: hsla(0,0%,0%,.3);
-  }
-  
-  .circular-menu.active .menu-item {
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .circular-menu.active .menu-item:nth-child(1) {
-    transform: translate3d(1em,-7em,0);
-  }
-  
-  .circular-menu.active .menu-item:nth-child(2) {
-    transform: translate3d(-3.5em,-6.3em,0);
-  }
-  
-  .circular-menu.active .menu-item:nth-child(3) {
-    transform: translate3d(-6.5em,-3.2em,0);
-  }
-  
-  .circular-menu.active .menu-item:nth-child(4) {
-    transform: translate3d(-7em,1em,0);
-  }
-  .circular-menu.active .menu-item:nth-child(5) {
-    transform: translate3d(-8em,4em,0);
-  }
-  
-  
-  /**
-   * The other theme for this menu
-   */
-  
-  .circular-menu.circular-menu-left {
-    right: auto; 
-    left: 6.5em;
-  }
-  
-  .circular-menu.circular-menu-left .floating-btn {
-    background-color: hsl(217, 89%, 61%);
-  }
-  
-  .circular-menu.circular-menu-left:after {
-    background-color: hsl(217, 89%, 61%);
-  }
-  
-  .circular-menu.circular-menu-left.active .floating-btn i {
-    transform: rotate(90deg);
-  }
-  
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
-    transform: translate3d(-1em,-7em,0);
-  }
-  
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
-    transform: translate3d(3.5em,-6.3em,0);
-  }
-  
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
-    transform: translate3d(6.5em,-3.2em,0);
-  }
-  
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
-    transform: translate3d(7em,1em,0);
-  }
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(5) {
-    transform: translate3d(5em,5.3em,0);
-  }
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(6) {
-    transform: translate3d(1em,7.3em,0);
-  }
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(7) {
-    transform: translate3d(-3em,6.3em,0);
-  }
-  .circular-menu.circular-menu-left.active .menu-item:nth-child(8) {
-    transform: translate3d(-6em,3.3em,0);
-}
-.circular-menu.circular-menu-left.active .menu-item:nth-child(9) {
-    transform: translate3d(-7em,-0.9em,0);
-}
 
-.circular-menu {
-    z-index: 100;
-    bottom: 5em;
-    right: 1em;
-    bottom: 55em;
-    position: fixed;
-  }
   .scrollup {
     bottom: 3.0em;
     cursor: pointer;
@@ -13288,32 +13130,124 @@ a:active { color:#000000; text-decoration: none;}
     z-index: 100;
     opacity: 0.5;
   }
+  .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1000;
+  height: 100px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+  text-align:center;
+  left: 61px;
+  filter: drop-shadow(5px 5px 5px rgb(218, 216, 216));
+}
+.header2 {
+  /* height 가 100px 일때 line-height가 100 -> 텍스트 중앙 정렬 */
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 100px;  
+  height: 100px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background: #fa6d6d;
+  color:#fff;
+  z-index: 1000;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+  text-align:center;
+}
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(63, 65, 95);
+  overflow-x: hidden;
+  /* padding-top: 102px; */
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+.side_button{
+cursor: pointer;
+
+}
+.side_name{
+  line-height: 50px;  
+  color: #6d6d6d;
+  text-align:center; 
+}
+
+.team_name{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;  
+  border-radius: 500px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+body{
+  margin-top: 100px;
+}
+
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-<!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
     </head>
-<body>
- <!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+    <body>
+      <div class="header">
+        <div style="display: flex;justify-content: flex-end;">
+          <div class="team_name" style="background-color: rgb(154, 247, 101);">용민</div>
+          <div class="team_name" style="background-color: dodgerblue;">준동</div>
+          <div class="team_name" style="background-color: rgb(255, 176, 30);">건우</div>
+          <div class="team_name" style="background-color: rgb(41, 248, 203);">정현</div>
+          <div class="team_name" style="margin-right:100px; background-color:rgb(201, 109, 255);">현정</div>
+        </div>
+      </div>
+      <div class="header2">Team 1</div>
+      <div class="sidenav">
+        <div class="side_button bubble-float-left" style="width: 150px; height: 50px;"></div>
+        <div class="side_button bubble-float-left" style="width: 120px; height: 50px; background-color: dodgerblue; "><a
+            href=""></a></div>
+    
+        <div class="side_button bubble-float-left " style=" height: 50px; background-color: rgb(75, 154, 233);"><a
+            href="index.html" class="side_name" style="color: white;">Home</a>
+        </div>
+        <div class="side_button bubble-float-left" style=" height: 50px; background-color: #fa6d6d"><a
+            href="semi_project.html" class="side_name" style="color: white;">Maps</a></div>
+        <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(224, 72, 230);"><a
+            href="junghyun.html" class="side_name" style="color: white;">Cell 1</a></div>
+        <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(224, 240, 83); "><a href="yongmin.html"
+            class="side_name" style="color: white;">Cell 2</a></div>
+        <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(118, 68, 236); "><a href="ER_Transportation.html"
+            class="side_name" style="color: white;">Cell 3</a></div>
+        <div class="side_button bubble-float-left" style=" height: 50px; background-color:  rgb(91, 236, 62);"><a href=""
+            class="side_name" style="color: white;">Cell 4</a></div>
+        <!-- <a rel="bubble-float-left" class="button bubble-float-left">Bubble Float Left</a> -->
+        <!-- <img class="side_button" src="assets\images\map.png">
+        <img class="side_button" src="assets\images\map.png">
+        <img class="side_button" src="assets\images\map.png">
+        <img class="side_button" src="assets\images\map.png"> -->
+      </div>
   <img class="scrollup" src="assets\images\up.png">
-  <div id="circularMenu1" class="circular-menu circular-menu-left" data-aos="zoom-in-right" data-aos-delay="1000" data-aos-duration="1500">
-
-    <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
-      <i class="fa fa-bars"></i>
-    </a>
-  
-    <menu class="items-wrapper">
-      <a href="index.html" class="menu-item fa fa-home"></a>
-      <a href="semi_project.html" class="menu-item fa fa-ambulance"></a>
-      <a href="#" class="menu-item fa fa-pie-chart"></a>
-      <a href="#" class="menu-item fa fa-pie-chart"></a>
-      <a href="#" class="menu-item fa fa-pie-chart"></a>
-      <a href="#" class="menu-item fa fa-pie-chart"></a>
-      <a href="#" class="menu-item fa fa-pie-chart"></a>
-      <a href="#" class="menu-item fa fa-pie-chart"></a>
-      <a href="#" class="menu-item fa fa-pie-chart"></a>
-    </menu>
-  
-  </div>
+ 
 <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script>  $(document).ready(function () {
   $(window).scroll(function () {
@@ -13325,8 +13259,6 @@ a:active { color:#000000; text-decoration: none;}
       $("html, body").stop().animate({ scrollTop: 0 });
   });
 });</script>
-
-
 </script>
 
 <!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
