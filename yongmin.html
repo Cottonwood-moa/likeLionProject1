@@ -16625,6 +16625,26 @@ body::-webkit-scrollbar {
 	margin-top: 10px;
 	margin-bottom: 10px;
   }
+  
+  .bubble-float-left {
+    position: relative;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .bubble-float-left:before {
+    border-style: solid;
+    transition-duration: 0.3s;
+    transition-property: left;
+  }
+  .bubble-float-left:hover {
+    transform: translateX(5px);
+  }
+  .bubble-float-left:hover:before {
+  }
+
   </style>
 
   <!-- Custom stylesheet, it must be in the same directory as the html file -->
