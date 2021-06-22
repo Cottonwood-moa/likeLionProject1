@@ -145,9 +145,6 @@ aside {
 	grid-area: aside; 
 }
 
-footer {
-	grid-area: footer;
-}
 
 
 /*  ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
@@ -198,10 +195,10 @@ footer {
   border-style: solid;
   transition-duration: 0.3s;
   transition-property: bottom;
-  left: calc(50% - 10px);
+  left: calc(50% - 15px);
   bottom: 0;
-  border-width: 10px 10px 0 10px;
-  border-color: #808080 transparent transparent transparent;
+  border-width: 15px 15px 0 15px;
+  border-color: #808080 transparent;
 }
 .bubble-bottom:hover:before {
   bottom: -10px;
@@ -232,10 +229,11 @@ footer {
     grid-template-areas: 
     "section1_1 section1_2 section1_3"
     "section2 section2 section4"
-    " section5_3 section5_1 section5_1"
+    "section5_3 section5_1 section5_1"
+    "section6 section6 section7"
     "blank blank blank";
-    grid-template-rows: 50% 50% 50% 5%;
-	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50% 50% 50% 5%;
+	  grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
     padding-right: 100px;
@@ -243,6 +241,7 @@ footer {
     margin-top: 50px;
 }
 .blank{
+  grid-area: blank;
 }
 span{
   font-size: 20px;
@@ -321,6 +320,7 @@ span{
     text-align: center;
     border-radius: 10px;
     min-width: 380px;
+    
 }
 #section5_2{
     background: rgb(245, 244, 244);
@@ -336,8 +336,27 @@ span{
   overflow-y: scroll;
   overflow-x: hidden;
   word-break:break-all;
+  text-align: center;
   border-radius: 10px;
   min-width: 380px;
+}
+#section6{
+  background: rgb(245, 244, 244);
+  grid-area: section6;
+  word-break:break-all;
+  text-align: center;
+  border-radius: 10px;
+  min-width: 380px;
+}
+#section7{
+  background: rgb(245, 244, 244);
+  grid-area: section7;
+  text-align: center;
+  border-radius: 10px;
+  min-width: 380px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  word-break:break-all;
 }
 
 .chart_day{
@@ -474,6 +493,7 @@ span{
   #container2{display: none;}
   .maps_title{display: none;}
   .map_button{display: none;}
+  .header_blank{display: none;}
   .mobile{
     font-size: 30px; 
     font-weight: bold; 

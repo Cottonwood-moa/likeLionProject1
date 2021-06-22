@@ -37,20 +37,19 @@
   </style>
   <style>
     .preloader {
-    display:inline;
-    z-index: 2000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transition: opacity .65s ease;
+      display: inline;
+      z-index: 2000;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transition: opacity .65s ease;
     }
-    
-    </style>
-    
-    <!-- <script>
+  </style>
+
+  <!-- <script>
       document.addEventListener("DOMContentLoaded", function() {
         requestAnimationFrame(function() {
           document.getElementById("loadingBar").style.width = "100%";
@@ -94,8 +93,8 @@
   <link rel="icon" href="assets\images\icon.png" />
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
   <title>Team 1</title>
   <script src="/js/pdfobject.js"></script>
   <script>PDFObject.embed("/pdf/sample-3pp.pdf", "#example1");</script>
@@ -109,8 +108,10 @@
 </head>
 
 <body>
-  
-  <div class="header" data-aos="fade-down"data-aos-duration="1000">
+  <div class="mobile">
+    <span>모바일은 안됩니다 ㅜㅡㅜ..</span>
+  </div>
+  <div class="header" data-aos="fade-down" data-aos-duration="1000">
     <div style="display: flex;justify-content: flex-end;">
       <div class="team_name" style="background-color: rgb(154, 247, 101);">용민</div>
       <div class="team_name" style="background-color: dodgerblue;">준동</div>
@@ -119,7 +120,7 @@
       <div class="team_name" style="margin-right:100px; background-color:rgb(201, 109, 255);">현정</div>
     </div>
   </div>
-  <div class="header2" data-aos="fade-down"data-aos-duration="1000">Team 1</div>
+  <div class="header2" data-aos="fade-down" data-aos-duration="1000">Team 1</div>
   <div class="sidenav" data-aos="fade-right" data-aos-duration="1000">
     <div class="side_button bubble-float-left" style="width: 150px; height: 50px;"></div>
     <div class="side_button bubble-float-left" style="width: 120px; height: 50px; background-color: dodgerblue; "><a
@@ -132,10 +133,10 @@
         href="semi_project.html" class="side_name" style="color: white;">Maps</a></div>
     <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(224, 72, 230);"><a
         href="junghyun.html" class="side_name" style="color: white;">Cell 1</a></div>
-    <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(224, 240, 83); "><a href="yongmin.html"
-        class="side_name" style="color: white;">Cell 2</a></div>
-    <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(118, 68, 236); "><a href="ER_Transportation.html"
-        class="side_name" style="color: white;">Cell 3</a></div>
+    <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(224, 240, 83); "><a
+        href="yongmin.html" class="side_name" style="color: white;">Cell 2</a></div>
+    <div class="side_button bubble-float-left" style=" height: 50px; background-color: rgb(118, 68, 236); "><a
+        href="ER_Transportation.html" class="side_name" style="color: white;">Cell 3</a></div>
     <div class="side_button bubble-float-left" style=" height: 50px; background-color:  rgb(91, 236, 62);"><a href=""
         class="side_name" style="color: white;">Cell 4</a></div>
 
@@ -146,8 +147,9 @@
   <div id="container1">
 
     <header class="map_button">
-      <div class="map_button1 " >
-        <div class="map_image"onclick="show_seoul_em()" data-aos="fade-down" data-aos-delay="200" data-aos-duration="500">
+      <div class="map_button1 ">
+        <div class="map_image" onclick="show_seoul_em()" data-aos="fade-down" data-aos-delay="200"
+          data-aos-duration="500">
           <div class="bubble-bottom" style="display: flex; justify-content: space-between;">
             <img class="map_icon" src="assets\images\placeholder.png" alt="">
             <span class="map_text">Point</span>
@@ -156,7 +158,8 @@
       </div>
 
       <div class="map_button2">
-        <div class="map_image"onclick="show_em_use()" data-aos="fade-down" data-aos-delay="200" data-aos-duration="500">
+        <div class="map_image" onclick="show_em_use()" data-aos="fade-down" data-aos-delay="200"
+          data-aos-duration="500">
           <div class="bubble-bottom" style="display: flex; justify-content: space-between;">
             <img class="map_icon" src="assets\images\polygon.png" alt="">
             <span class="map_text">Polygon</span>
@@ -164,7 +167,8 @@
         </div>
       </div>
       <div class="map_button3">
-        <div class="map_image"onclick="show_em_rad()" data-aos="fade-down" data-aos-delay="200" data-aos-duration="500">
+        <div class="map_image" onclick="show_em_rad()" data-aos="fade-down" data-aos-delay="200"
+          data-aos-duration="500">
           <div class="bubble-bottom" style="display: flex; justify-content: space-between;">
             <img class="map_icon" src="assets\images\circle.png" alt="">
             <span class="map_text">Circle</span>
@@ -172,8 +176,9 @@
           </div>
         </div>
       </div>
-      <div class="map_button4" >
-        <div class="map_image"onclick="show_em_heatmap()" data-aos="fade-down" data-aos-delay="200" data-aos-duration="500">
+      <div class="map_button4">
+        <div class="map_image" onclick="show_em_heatmap()" data-aos="fade-down" data-aos-delay="200"
+          data-aos-duration="500">
           <div class="bubble-bottom" style="display: flex; justify-content: space-between;">
             <img class="map_icon" src="assets\images\rainbow-flag.png" alt="">
             <span class="map_text">Heatmap</span>
@@ -199,7 +204,6 @@
 
   </div>
   <div id="container2">
-    <div id="example1"></div>
     <!-- 1 -->
     <div id="section1_1" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
       <img src="assets\images\junghyun2.png" class="chart_day">
@@ -294,27 +298,27 @@
           등의 사유로 응급실을 방문하는 비율은 여성에게서 더 많이 나타났음</li><br>
         <li>stack barmode를 사용하여 남녀를 합쳐 쌓아 올린 bar chart에서는 어떤 그림이 나타나는지도 그려보았음</li><br>
         <li>2019년 질병으로 인한 내원율은 남녀를 합하여 100만명이 넘는 수치가 확인되었음</li><br>
-        <li>2019년 모든 내원 사유의 합계를 보았을 때에도 역시 15년도에 비해 증가하여 140만명을 넘는 것을 확인할 수 있었음</li>
-        <li>하지만, 서울특별시 인구는 2010년 부터 꾸준히 감소하였다.</li>
-        <li>응급실 수가 늘어나 접근성이 용이해졌거나, 구급차(응급차) 수 증가 및 서울시 내 교통편의 발달이 있었을 수 있다.</li>
+        <li>2019년 모든 내원 사유의 합계를 보았을 때에도 역시 15년도에 비해 증가하여 140만명을 넘는 것을 확인할 수 있었음</li><br>
+        <li>하지만, 서울특별시 인구는 2010년 부터 꾸준히 감소하였다.</li><br>
+        <li>응급실 수가 늘어나 접근성이 용이해졌거나, 구급차(응급차) 수 증가 및 서울시 내 교통편의 발달이 있었을 수 있다.</li><br>
       </div>
     </div>
-<!-- 
+    <!-- 
   
 
  -->
     <!-- 2 -->
-    <div id="section2"  class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
-      <div class="flex">
-        <img src="assets\images\yongmin.png" class="chart_day">
-        <div class="description"  style="font-size: 20px;">
+    <div id="section2" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <div class="flex" style="flex-direction: column;">
+        <img src="assets\images\yongmin.png" class="chart_day" style="width: 97%; height: 44vh;">
+        <div class="description" style="font-size: 20px;">
           <li>최초 데이터 자료를 통해, 성별과 나이별 구분을 하는 것이 특정 교통 수단을 사용하는 것과 연결할 때 크게 유의미한 점을 찾지 못하였기 때문에 성별과 나이 구분은 제외함. </li><br>
-          <li> 2015년과 2019년의 응급실 교통수단을 비교 하였을때, TOP 5에 비하여 TOP 5를 제외한 나머지 교통수단에서는 특별히 큰 차이점을 느끼기 어려워 Pie chart 에 percentage(%)를 적용하여 TOP 5 교통수단만을 시각화를 하였음</li><br>
+          <li> 2015년과 2019년의 응급실 교통수단을 비교 하였을때, TOP 5에 비하여 TOP 5를 제외한 나머지 교통수단에서는 특별히 큰 차이점을 느끼기 어려워 Pie chart 에
+            percentage(%)를 적용하여 TOP 5 교통수단만을 시각화를 하였음</li><br>
           <li>Pie chart 에서 한 눈에 구별할 수 있는 것 처럼, 대부분의 이용자들이 자가용으로 응급실까지 이동하는 것을 알 수 있다.</li><br>
-          <li>구급차(119 구급차 + 기타 구급차 + 의료 기관 구급차) 이용의 비율이 25% -> 27% 로 소폭 상승한 결과를 확인할 수 있었고, 이에 반해 자동차(자가용)과 도보 이동자는 각 1%씩 소폭 감소한 것을 확인 하였다.</li><br>
-         <li>이를 통해, 15년도와 비교하여 자동차와 도보 이용객의 일부가 19년에는 조금 더 구급차를 이용할 수 있게 된 것으로 추측할 수 있다></li><br>
-        </div>
-        <div class="description2"  style="font-size: 20px;">
+          <li>구급차(119 구급차 + 기타 구급차 + 의료 기관 구급차) 이용의 비율이 25% -> 27% 로 소폭 상승한 결과를 확인할 수 있었고, 이에 반해 자동차(자가용)과 도보 이동자는 각 1%씩
+            소폭 감소한 것을 확인 하였다.</li><br>
+          <li>이를 통해, 15년도와 비교하여 자동차와 도보 이용객의 일부가 19년에는 조금 더 구급차를 이용할 수 있게 된 것으로 추측할 수 있다></li><br>
           <li>남자 여자의 이용수가 비슷해 남자와 여자를 나누는 것은 의미가 없는 것 같아 연령별,월별로 나누고 여자 남자의 총 인원의 값으로 데이터를 시각화 했다.</li><br>
           <li>연령별,월별로 나누고 여자 남자의 총 인원의 값으로 데이터를 시각화 했다.</li><br>
           <li>연령별과 월별을 같이 했을때 그래프가 너무 커져서 연령별을 "유아, 청소년, 청년, 중년, 고령"으로 나누었다.</li><br>
@@ -324,7 +328,7 @@
         </div>
       </div>
     </div>
-  
+
     <div id="section4" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
       <img src="assets\images\yongmin2.png" class="chart_day">
       <div class="description" style="font-size: 20px;">
@@ -334,12 +338,12 @@
         <li>나머지 연령은 거의 모든 달이 비슷하지만, 전체적으로는 연말에 응급실 이용 현황이 높은 것을 볼 수 있다.</li><br>
       </div>
     </div>
+
     <!-- 3 -->
     <div id="section5_3" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
-      <!-- <img src="assets\images\day.png" class="chart_day"> -->
       <div class="description" style="font-size: 20px;">
-        <li> 최초 데이터 자료를 통해, 성별과 나이별 구분을 하는 것이 특정 교통 수단을 사용하는 것과 연결할 때 크게 유의미한 점을 찾지 못하였기 때문에 성별과 나이 구분은 제외함. (성별이 다르고
-          나이가 다르다고 특정 교통 수단을 더 이용하는 것이 아니었다.)</li><br>
+        <li>처음 받은 파일에서는 성별과 나이별로 응급수단을 나눠져 있지만 성별이 다르다고 나이가 다르다고
+          특정한 교통수단을 더 많이 타고 적게 탈 수 있는것이 아니라고 생각하여 모두 제외함.</li><br>
         <li>2015년과 2019년의 응급실 교통수단을 비교 하였을때, TOP 5에 비하여 TOP 5를 제외한 나머지 교통수단에서는 특히 큰 차이점을 느끼기 어려워 Pie chart 에
           percentage(%)를 적용하여 TOP 5 교통수단만을 시각화를 하였음</li><br>
         <li>
@@ -352,55 +356,81 @@
       </div>
     </div>
     <div id="section5_1" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
-      <img src="assets\images\jun.png" class="chart_day" style="height: 43vh;">
-      <img src="assets\images\jun2.png" class="chart_day" style="height: 43vh;">
+      <img src="assets\images\jun.png" class="chart_day" style="height: 46vh;">
+      <img src="assets\images\jun2.png" class="chart_day" style="height: 46vh;">
       <div class="description">
       </div>
     </div>
-    
+
+    <!-- 4 -->
+    <div id="section6" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <img src="assets\images\pie.png" class="chart_day" style="height: 46vh;">
+      <img src="assets\images\pie.png" class="chart_day" style="height: 46vh;">
+      <div class="description">
+      </div>
+    </div>
+    <div id="section7" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
+      <div class="description" style="font-size: 20px;">
+        이상은 인간의 무엇을 같지 칼이다. 물방아 불어 노년에게서 약동하다. 있음으로써 이것을 피에 그들은 인생을 것은 살았으며, 싸인 품에 것이다. 그들에게 봄바람을 뜨고, 영원히 목숨을 힘있다. 우리
+        우리의 얼음과 보배를 것이다. 가치를 인간에 실현에 놀이 이것이다. 커다란 앞이 품었기 두손을 것이다. 풍부하게 기쁘며, 위하여, 힘차게 작고 이것이다. 미인을 이상, 두손을 내려온 심장의 교향악이다.
+        황금시대의 인간은 튼튼하며, 이것을 크고 불러 것이다. 어디 인생에 그들에게 피부가 그들을 없는 곧 싸인 듣는다.
+
+        가슴에 그림자는 실로 이것이다. 청춘에서만 스며들어 앞이 천지는 원대하고, 인간의 내는 이것이다. 풍부하게 싸인 그들의 용기가 사막이다. 석가는 굳세게 오아이스도 심장의 커다란 같은 무엇이 무엇을
+        그리하였는가? 그들은 황금시대를 주며, 피부가 풍부하게 커다란 쓸쓸하랴? 못할 방황하여도, 뼈 있는가? 낙원을 가슴이 할지니, 있음으로써 반짝이는 바이며, 새가 어디 아름다우냐? 밥을 얼마나 피는 있는
+        거친 하는 위하여서. 봄바람을 이것이야말로 뛰노는 그들의 갑 같지 스며들어 아니한 그들은 칼이다.
+
+        심장의 이것을 풍부하게 길을 아니다. 대한 같이, 하는 착목한는 바이며, 방황하여도, 그러므로 쓸쓸한 못할 있다. 반짝이는 가지에 작고 사는가 하는 이는 긴지라 창공에 것이다. 지혜는 그러므로 우리의
+        주는 그들의 끝에 타오르고 황금시대다. 우리의 동력은 청춘이 끓는 열락의 것이다. 풀이 그와 피가 하는 더운지라 미인을 놀이 아름다우냐? 방지하는 바이며, 소금이라 우리의 할지니, 있는 우리 어디 끓는
+        철환하였는가? 갑 바이며, 것이다.보라, 인생의 새가 것은 사랑의 그러므로 이것을 힘있다. 이 이것이야말로 고동을 때까지 보라.
+
+        되는 더운지라 구하지 만천하의 사라지지 천지는 있는 예가 인생을 끓는다. 이 바이며, 무엇이 있는 열락의 인생에 어디 사막이다. 지혜는 구할 인간의 실현에 칼이다. 원질이 그러므로 끝에 발휘하기 커다란
+        그리하였는가? 이상이 불어 기쁘며, 길지 굳세게 인도하겠다는 피가 없는 있을 것이다. 갑 오직 이상의 대한 열락의 피다. 새 이상, 따뜻한 있는가? 천고에 반짝이는 피에 그들의 말이다. 청춘의 그러므로
+        얼마나 그들의 광야에서 그리하였는가?
+
+        가는 천지는 따뜻한 그러므로 별과 돋고, 원질이 얼음과 그리하였는가? 동산에는 열매를 이는 않는 끓는 소리다.이것은 위하여서, 있는 위하여서. 충분히 주며, 산야에 얼음과 별과 거친 풀이 뭇 그들의
+        때문이다. 그들의 인도하겠다는 구하지 주며, 원대하고, 것이다. 이상이 더운지라 넣는 가장 이 가는 위하여 구하지 따뜻한 것이다. 자신과 예가 이는 이상을 그들에게 끝에 별과 철환하였는가? 보내는 얼음
+        것이 끓는 청춘은 그러므로 거선의 인생에 것이다. 피가 천하를 없으면 인생을 위하여 피고, 그들의 사람은 인류의 쓸쓸하랴? 그것은 심장은 못할 천하를 얼마나 피다.
+      </div>
+    </div>
     <!-- <div id="section5_2" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
       <img src="assets\images\jun2.png" class="chart_day" style="height: 43vh;">
       <div class="description">
       </div>
     </div> -->
-  
-  </div>
-  <footer class="blank"></footer>
-  <div class="mobile">
-    <span>모바일은 안됩니다 ㅜㅡㅜ..</span>
-  </div>
 
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <div id="blank"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-  </script>
+    </script>
 
-  <script type="text/javascript">
-    function clickEffect(e) {
-      var d = document.createElement("div");
-      d.className = "clickEffect";
-      d.style.top = e.clientY + "px"; d.style.left = e.clientX + "px";
-      document.body.appendChild(d);
-      d.addEventListener('animationend', function () { d.parentElement.removeChild(d); }.bind(this));
-    }
-    document.addEventListener('click', clickEffect);
-  </script>
+    <script type="text/javascript">
+      function clickEffect(e) {
+        var d = document.createElement("div");
+        d.className = "clickEffect";
+        d.style.top = e.clientY + "px"; d.style.left = e.clientX + "px";
+        document.body.appendChild(d);
+        d.addEventListener('animationend', function () { d.parentElement.removeChild(d); }.bind(this));
+      }
+      document.addEventListener('click', clickEffect);
+    </script>
 
-  <script src="assets\js\em_rad.js"></script>
-  <script src="assets\js\em_use.js"></script>
-  <script src="assets\js\em_heatmap.js"></script>
-  <script src="assets\js\seoul_em.js"></script>
-  <script src="assets\js\main.js"></script>
+    <script src="assets\js\em_rad.js"></script>
+    <script src="assets\js\em_use.js"></script>
+    <script src="assets\js\em_heatmap.js"></script>
+    <script src="assets\js\seoul_em.js"></script>
+    <script src="assets\js\main.js"></script>
+
 </body>
 
 <div id="loadingIndicator" class="preloader" style="display: flex; justify-content: center; line-height:900px;">
-     <div style="font-size: 100px; vertical-align:middle;">
-       <img src="assets\images\loading.gif" alt="">
-       <span style="font-size: 50px;">1팀 준비중~</span>
-     </div>
+  <div style="font-size: 100px; vertical-align:middle;">
+    <img src="assets\images\loading.gif" alt="">
+    <span style="font-size: 50px;">1팀 준비중~</span>
+  </div>
 </div>
 
 </html>
