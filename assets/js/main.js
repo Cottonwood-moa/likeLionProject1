@@ -1,4 +1,8 @@
 window.onload = function () {
+  document.getElementById("loadingIndicator").style.opacity = "0";
+  setTimeout(function () {
+    document.getElementById("loadingIndicator").style.display = "none";
+  }, 450);
   $("#map_7055c322c99c407db76e4538a87d3811").hide()
   $("#map_9359b393552146b5b49ac6130f91b76a").hide()
   $("#map_17249d550ebd43bb94ad6c3859afbcc7").hide()
@@ -56,3 +60,11 @@ $(document).ready(function () {
     $("html, body").stop().animate({ scrollTop: 0 });
   });
 });
+
+function closeLoadingWithMask() {
+  $('#mask, #loadingImg').hide();
+  $('#mask, #loadingImg').remove();
+  alert("Hello, world")
+}
+
+

@@ -35,6 +35,28 @@
       }
     }
   </style>
+  <style>
+    .preloader {
+    display:inline;
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: opacity .65s ease;
+    }
+    
+    </style>
+    
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        requestAnimationFrame(function() {
+          document.getElementById("loadingBar").style.width = "100%";
+          });
+        });
+    </script> -->
   <!-- maps  -->
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
@@ -87,6 +109,7 @@
 </head>
 
 <body>
+  
   <div class="header" data-aos="fade-down"data-aos-duration="1000">
     <div style="display: flex;justify-content: flex-end;">
       <div class="team_name" style="background-color: rgb(154, 247, 101);">용민</div>
@@ -371,5 +394,12 @@
   <script src="assets\js\seoul_em.js"></script>
   <script src="assets\js\main.js"></script>
 </body>
+
+<div id="loadingIndicator" class="preloader" style="display: flex; justify-content: center; line-height:900px;">
+     <div style="font-size: 100px; vertical-align:middle;">
+       <img src="assets\images\loading.gif" alt="">
+       <span style="font-size: 50px;">1팀 준비중~</span>
+     </div>
+</div>
 
 </html>
