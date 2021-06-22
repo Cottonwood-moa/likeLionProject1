@@ -236,7 +236,7 @@ footer {
     grid-template-areas: 
     "section1_1 section1_2 section1_3"
     "section2 section2 section4"
-    "section5_1 section5_2 section5_3"
+    " section5_3 section5_1 section5_1"
     "blank blank blank";
     grid-template-rows: 50% 50% 50% 5%;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -290,9 +290,9 @@ span{
 #section2{
     background: rgb(245, 244, 244);
     grid-area: section2;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
-    /* word-break:break-all; */
+    word-break:break-all;
     border-radius: 10px;
     min-width: 380px;
 }
@@ -458,6 +458,16 @@ span{
     display: flex;
     
 }
+@media (max-width: 1000px) {
+  body{
+    display: none;
+  }
+}
+#mobile{
+  display: none;
+}
+
+
 
   .bubble-float-left {
     position: relative;
@@ -479,11 +489,11 @@ span{
   }
 
 .map_icon{
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 4vw;
+  height: 4vw;
   vertical-align:middle;
-  margin-top: 3%;
+  margin: 3%;
+  margin-top: 6%;
 }
 
 .map_text{
