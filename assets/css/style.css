@@ -458,13 +458,23 @@ span{
     display: flex;
     
 }
-@media (max-width: 1000px) {
-  body{
-    display: none;
-  }
-}
-#mobile{
+.mobile{
   display: none;
+}
+
+@media (max-width: 1000px) {
+  .maps{display: none;}
+  .header{display: none;}
+  .header2{display: none;}
+  .sidenav{display: none;}
+  .scrollup{display: none;}
+  .container1{display: none;}
+  .folium-map{display: none;}
+  .container2{display: none;}
+  .maps_title{display: none;}
+  .map_button{display: none;}
+  ::selection{display: none;}
+  .mobile{display: inline;}
 }
 
 
