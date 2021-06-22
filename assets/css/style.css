@@ -278,9 +278,9 @@ span{
     text-align: center;
     border-radius: 10px;
     min-width: 380px;
+  -ms-overflow-style: none;
     
 }
-
 
 #section2{
     background: rgb(245, 244, 244);
@@ -290,6 +290,7 @@ span{
     word-break:break-all;
     border-radius: 10px;
     min-width: 380px;
+    -ms-overflow-style: none;
 }
 
 
@@ -302,6 +303,7 @@ span{
     text-align: center;
     border-radius: 10px;
     min-width: 380px;
+    -ms-overflow-style: none;
 }
 #section4{
     background: rgb(245, 244, 244);
@@ -312,6 +314,7 @@ span{
     text-align: center;
     border-radius: 10px;
     min-width: 380px;
+    -ms-overflow-style: none;
 }
 #section5_1{
     background: rgb(245, 244, 244);
@@ -320,6 +323,7 @@ span{
     text-align: center;
     border-radius: 10px;
     min-width: 380px;
+    -ms-overflow-style: none;
     
 }
 #section5_2{
@@ -329,6 +333,7 @@ span{
     text-align: center;
     border-radius: 10px;
     min-width: 380px;
+    -ms-overflow-style: none;
 }
 #section5_3{
   background: rgb(245, 244, 244);
@@ -339,6 +344,7 @@ span{
   text-align: center;
   border-radius: 10px;
   min-width: 380px;
+  -ms-overflow-style: none;
 }
 #section6{
   background: rgb(245, 244, 244);
@@ -347,6 +353,7 @@ span{
   text-align: center;
   border-radius: 10px;
   min-width: 380px;
+  -ms-overflow-style: none;
 }
 #section7{
   background: rgb(245, 244, 244);
@@ -357,8 +364,19 @@ span{
   overflow-y: scroll;
   overflow-x: hidden;
   word-break:break-all;
+  -ms-overflow-style: none;
 }
-
+#section1_1::-webkit-scrollbar{ display:none; }
+#section1_2::-webkit-scrollbar{ display:none; }
+#section1_3::-webkit-scrollbar{ display:none; }
+#section2::-webkit-scrollbar{ display:none; }
+#section3::-webkit-scrollbar{ display:none; }
+#section4::-webkit-scrollbar{ display:none; }
+#section5_1::-webkit-scrollbar{ display:none; }
+#section5_2::-webkit-scrollbar{ display:none; }
+#section5_3::-webkit-scrollbar{ display:none; }
+#section6::-webkit-scrollbar{ display:none; }
+#section7::-webkit-scrollbar{ display:none; }
 .chart_day{
     width: 25vw;
     height: 35vh;
