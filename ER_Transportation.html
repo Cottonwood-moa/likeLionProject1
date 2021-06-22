@@ -13211,18 +13211,7 @@ body::-webkit-scrollbar {
   }
   .bubble-float-left:hover:before {
   }
-  .preloader {
-    display:inline;
-    z-index: 2000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transition: opacity .65s ease;
-    }
-    
+
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
@@ -13249,14 +13238,6 @@ body::-webkit-scrollbar {
         }
     });
     </script>
-    <script>
-      window.onload = function () {
-  document.getElementById("loadingIndicator").style.opacity = "0";
-  setTimeout(function () {
-    document.getElementById("loadingIndicator").style.display = "none";
-  }, 450);
-}
-      </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13496,12 +13477,6 @@ C:\Users\geon0\Anaconda3\lib\site-packages\ipykernel_launcher.py:40: FutureWarni
     </div>
   </div>
 </body>
-<div id="loadingIndicator" class="preloader" style="display: flex; justify-content: center; line-height:900px;">
-     <div style="font-size: 100px; vertical-align:middle;">
-       <img src="assets\images\loading.gif" alt="">
-       <span style="font-size: 50px;">Cell 3 준비중~</span>
-     </div>
-</div>
 
  
 
