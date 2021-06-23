@@ -345,31 +345,35 @@ span{
     border-radius: 10px;
 }
 .sh_sec6_1{
-  width: 27vw;
+  width: 23vw;
   height: 44vh;
   margin: 20px;
   border-radius: 10px;
+  min-width: 380px;
 }
 .sh_sec6_2{
-  width: 27vw;
+  width: 23vw;
   height: 44vh;
   margin: 20px;
   border-radius: 10px;
   display: none;
+  min-width: 380px;
 }
 .sh_sec6_3{
-  width: 27vw;
+  width: 23vw;
   height: 44vh;
   margin: 20px;
   border-radius: 10px;
   display: none;
+  min-width: 380px;
 }
 .sh_sec6_4{
-  width: 27vw;
+  width: 23vw;
   height: 44vh;
   margin: 20px;
   border-radius: 10px;
   display: none;
+  min-width: 380px;
 }
 .description{
     font-size: 25px;
@@ -487,7 +491,7 @@ span{
     height: 4.5vw; 
     background-color: white; 
     margin: 10px;  
-    line-height: 100px;
+    line-height: 4.5vw;
     border-radius: 20px;
     font-size:1.5vw;
     cursor: pointer;
