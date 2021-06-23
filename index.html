@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,6 @@
       animation: clickEffect 0.4s ease-out;
       z-index: 99999;
     }
-
     @keyframes clickEffect {
       0% {
         opacity: 1;
@@ -58,7 +56,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
   <link rel="stylesheet"
@@ -78,15 +75,11 @@
   <link rel="stylesheet" href="assets\css\em_heatmap.css">
   <link rel="stylesheet" href="assets\css\seoul_em.css">
   <link rel="stylesheet" href="assets\css\style.css">
-  <!-- ㅡㅡㅡㅡㅡ  -->
   <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
-  <!-- jupyter -->
   <link rel="icon" href="assets\images\icon.png" />
-  <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-  <!-- fanacy box -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <link rel="stylesheet" href="assets\fancybox-master\dist\jquery.fancybox.min.css" />
   <script src="assets\fancybox-master\dist\jquery.fancybox.min.js"></script>
@@ -320,8 +313,6 @@
         <li>나머지 연령은 거의 모든 달이 비슷하지만, 전체적으로는 연말에 응급실 이용 현황이 높은 것을 볼 수 있다.</li><br>
       </div>
     </div>
-
-    <!-- 3 -->
     <div id="section5_3" class="scroll_bar" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
       <div class="description" style="font-size: 20px;">
         <li>처음 받은 파일에서는 성별과 나이별로 응급수단을 나눠져 있지만 성별이 다르다고 나이가 다르다고
@@ -345,8 +336,6 @@
       <div class="description">
       </div>
     </div>
-
-    <!-- 4 -->
     <div id="section6_2" class="scroll_bar" style="display: flex; justify-content: space-around; align-items: center;"
       data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
       <div style="display: flex; flex-direction: column;">
@@ -358,7 +347,6 @@
     </div>
     <div id="section6" class="scroll_bar" style="display: flex; justify-content: space-around; align-items: center;"
       data-aos="zoom-in" data-aos-delay="50" data-aos-duration="800">
-
       <a data-fancybox="gallery" href="assets\images\hyun.png"> <img src="assets\images\hyun.png" class="sh_sec6_1"></a>
       <a data-fancybox="gallery" href="assets\images\hyun2.png"> <img src="assets\images\hyun2.png"
           class="sh_sec6_2"></a>
@@ -382,9 +370,7 @@
     <script>
       AOS.init();
     </script>
-
     </script>
-
     <script type="text/javascript">
       function clickEffect(e) {
         var d = document.createElement("div");
@@ -395,20 +381,16 @@
       }
       document.addEventListener('click', clickEffect);
     </script>
-
     <script src="assets\js\em_rad.js"></script>
     <script src="assets\js\em_use.js"></script>
     <script src="assets\js\em_heatmap.js"></script>
     <script src="assets\js\seoul_em.js"></script>
     <script src="assets\js\main.js"></script>
-
 </body>
-
 <div id="loadingIndicator" class="preloader" style="display: flex; justify-content: center; line-height:900px;">
   <div style="font-size: 100px; vertical-align:middle;">
     <img src="assets\images\loading.gif" alt="">
     <span style="font-size: 50px;">1팀 준비중~</span>
   </div>
 </div>
-
 </html>

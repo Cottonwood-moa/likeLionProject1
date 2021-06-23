@@ -1,12 +1,9 @@
-/* Note: This example only works with Windows Insider Preview Builds 16237+ or the Fall Creators Update. */
-
 body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: 'Jua', sans-serif;
 }
-
 .header {
   position: fixed;
   top: 0;
@@ -24,7 +21,6 @@ body{
   filter: drop-shadow(5px 5px 5px rgb(218, 216, 216));
 }
 .header2 {
-  /* height 가 100px 일때 line-height가 100 -> 텍스트 중앙 정렬 */
   font-size: 50px;
   font-weight: bold;
   line-height: 100px;  
@@ -54,7 +50,6 @@ body{
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
 .sidenav {
   height: 100%;
   width: 60px;
@@ -65,9 +60,7 @@ body{
   background-color: rgb(63, 65, 95);
   overflow-x: hidden;
   filter: drop-shadow(5px 5px 5px rgb(160, 158, 158));
-  /* padding-top: 102px; */
 }
-
 .sidenav a {
   text-decoration: none;
   font-size: 20px;
@@ -76,14 +69,12 @@ body{
 }
 .side_button{
 cursor: pointer;
-
 }
 .side_name{
   line-height: 50px;  
   color: #6d6d6d;
   text-align:center; 
 }
-
 .active {
   background-color: rgba(34,34,34,0.8);
 }
@@ -104,13 +95,9 @@ body::-webkit-scrollbar {
 	margin-bottom: 10px;
   }
 a:link { color:#000000; text-decoration: none;}  
-
 a:visited { color:#000000; text-decoration: none;} 
-
 a:hover { color:#000000; text-decoration: none;}
-
 a:active { color:#000000; text-decoration: none;}
-
 #container1 { 
   font-family: 'Jua', sans-serif;
 	display: grid;
@@ -120,37 +107,25 @@ a:active { color:#000000; text-decoration: none;}
 	grid-template-rows: 20% 1fr;
 	grid-template-columns:1fr 92% 1fr;
   background: rgb(245, 244, 244);
-    width: 100%;
-    height: 80%;
-    /* margin-top: 4%; */
-    
+  width: 100%;
+  height: 80%;
 }
-
 header {
     margin: 0 auto;
 	  grid-area: header;
-
 }
-
 nav {
 	grid-area: nav; 
     padding-right: 10px;
 }
-
 section {
 	grid-area: section;    
 }
-
 aside {
 	grid-area: aside; 
 }
-
-
-
-/*  ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
 .map_button{
     display: flex;
-    
 }
 .map_image{
     width: 21vw;
@@ -164,20 +139,16 @@ aside {
     cursor: pointer;
 }
 .map_button1{
-    /* grid-area: map1; */
     margin-left: 50px;
     height: 6vw;
 }
 .map_button2{
-    /* grid-area: map2; */
     height: 6vw;
 }
 .map_button3{
-    /* grid-area: map3; */
     height: 6vw;
 }
 .map_button4{
-    /* grid-area: map4; */
     height: 6vw;
 }
 .bubble-bottom {
@@ -203,29 +174,16 @@ aside {
 .bubble-bottom:hover:before {
   bottom: -10px;
 }
-/* .hover_image{
-	margin-top: 30px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    /* filter: drop-shadow(5px 5px 5px #000);} */
-
 .hover_image:hover {
 	margin-top: 0;
 } */
-
 .maps_image{
     width: 100%;
     height: 100% ;
 }
-
-/*  */
 #container2{
     display: grid;
     grid-gap: 50px;
-    /* grid-template-columns: repeat(9, 1fr); */
     grid-template-areas: 
     "section1_1 section1_2 section1_3"
     "section2 section2 section4"
@@ -267,7 +225,6 @@ span{
     border-radius: 10px;
     min-width: 380px;
     font-size: 20px;
-
 }
 #section1_3{
     background: rgb(245, 244, 244);
@@ -281,7 +238,6 @@ span{
   -ms-overflow-style: none;
     
 }
-
 #section2{
     background: rgb(245, 244, 244);
     grid-area: section2;
@@ -292,12 +248,9 @@ span{
     min-width: 380px;
     -ms-overflow-style: none;
 }
-
-
 #section3{
     background: rgb(245, 244, 244);
     grid-area: section3;
-    /* overflow-y: scroll; */
     overflow-x: hidden;
     word-break:break-all;
     text-align: center;
@@ -308,7 +261,6 @@ span{
 #section4{
     background: rgb(245, 244, 244);
     grid-area: section4;
-    /* overflow-y: scroll; */
     overflow-x: hidden;
     word-break:break-all;
     text-align: center;
@@ -364,8 +316,6 @@ span{
   min-width: 380px;
   -ms-overflow-style: none;
 }
-
-
 #section7{
   background: rgb(245, 244, 244);
   grid-area: section7;
@@ -393,7 +343,6 @@ span{
     height: 35vh;
     margin: 20px;
     border-radius: 10px;
-    /* filter: drop-shadow(5px 5px 5px #000); */
 }
 .sh_sec6_1{
   width: 27vw;
@@ -408,7 +357,6 @@ span{
   border-radius: 10px;
   display: none;
 }
-
 .sh_sec6_3{
   width: 27vw;
   height: 44vh;
@@ -416,7 +364,6 @@ span{
   border-radius: 10px;
   display: none;
 }
-
 .sh_sec6_4{
   width: 27vw;
   height: 44vh;
@@ -424,14 +371,10 @@ span{
   border-radius: 10px;
   display: none;
 }
-
-
 .description{
     font-size: 25px;
     margin: 10px;
 }
-
-
 .scroll_bar::-webkit-scrollbar {
     width: 10px;
   }
@@ -448,44 +391,12 @@ span{
 	margin-top: 10px;
 	margin-bottom: 10px;
   }
-
-  /* .hover_image {
-	position: relative;
-    margin-top: 30px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
- filter: drop-shadow(5px 5px 5px #000);
-}
-.hover_image .text {
-	position: absolute;		
-    top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 10;
-    opacity: 0;
-    transition: all 0.8s ease;			
-}
-.hover_image .text h1 {		
-	margin: 0;		
-	color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-family: 'Gamja Flower', cursive;
-}
-.hover_image:hover .text {
-	opacity: 1;
-	font-family: 'Gamja Flower', cursive;
-}
-.hover_image:hover img {
-	-webkit-filter: sepia(90%);
-} */
 .maps_title{
     width: 100%;
     text-align:center;
     margin-bottom: 20px;
     font-size: 50px;
 }
-
 .scrollup {
     bottom: 3.0em;
     cursor: pointer;
@@ -496,46 +407,12 @@ span{
     z-index: 100;
     opacity: 0.5;
   }
-
-
-  @media (max-width: 1200px) {
-    #container2 {
-        grid-template-areas: 
-        "section1_1"
-        "section1_2"
-        "section1_3"
-        "section2"
-        "section4"
-        "section5_1"
-        "section5_2";
-        grid-template-rows: 40% 40% 40% 40% 40% 40% 40%;
-        padding-right: 100px;
-    padding-left: 100px;
-    margin-top: 200px;
-    margin-bottom: 2000px;
-    }
-    .chart_day{
-        width: 34vw;
-        height: 28vh;
-        margin: 20px;
-        border-radius: 10px;
-        /* filter: drop-shadow(5px 5px 5px #000); */
-  }
-  .map_text{
-    display: none;
-  }
-  .map_image{
-    background-color:rgb(245, 244, 244); ;
-  }
-}
 .flex{
     display: flex;
-    
 }
 .mobile{
   display: none;
 }
-
 @media (max-width: 1000px) {
   body{
     display: flex;
@@ -564,7 +441,6 @@ span{
   .scrollup{
     display: none;
   }
-
 }
   .bubble-float-left {
     position: relative;
@@ -584,7 +460,6 @@ span{
   }
   .bubble-float-left:hover:before {
   }
-
 .map_icon{
   width: 4vw;
   height: 4vw;
@@ -604,11 +479,9 @@ span{
 .leaflet-top,
 .leaflet-bottom {
   position: absolute;
-  z-index: 499; /* was 1000 */
+  z-index: 499;
   pointer-events: none;
   }
-
-
   .button_sec6{
     width: 20vw; 
     height: 4.5vw; 
@@ -619,12 +492,9 @@ span{
     font-size:1.5vw;
     cursor: pointer;
   }
-
-
 li{
   list-style-type :circle;
 }
-
 .bubble-right {
   display: inline-block;
   position: relative;
