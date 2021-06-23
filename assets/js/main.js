@@ -33,6 +33,31 @@ function show_em_heatmap() {
   $("#map_17249d550ebd43bb94ad6c3859afbcc7").show(400)
 }
 
+function sh_sec6_1() {
+  $(".sh_sec6_2").hide()
+  $(".sh_sec6_3").hide()
+  $(".sh_sec6_4").hide()
+  $(".sh_sec6_1").show(400)
+}
+function sh_sec6_2() {
+  $(".sh_sec6_1").hide()
+  $(".sh_sec6_3").hide()
+  $(".sh_sec6_4").hide()
+  $(".sh_sec6_2").show(400)
+}
+function sh_sec6_3() {
+  $(".sh_sec6_1").hide()
+  $(".sh_sec6_2").hide()
+  $(".sh_sec6_4").hide()
+  $(".sh_sec6_3").show(400)
+}
+function sh_sec6_4() {
+  $(".sh_sec6_1").hide()
+  $(".sh_sec6_2").hide()
+  $(".sh_sec6_3").hide()
+  $(".sh_sec6_4").show(400)
+}
+
 // $(function () {
 //   var shrinkHeader = 30;
 //   $(window).scroll(function () {

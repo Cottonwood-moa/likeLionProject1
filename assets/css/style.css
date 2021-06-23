@@ -230,7 +230,7 @@ aside {
     "section1_1 section1_2 section1_3"
     "section2 section2 section4"
     "section5_3 section5_1 section5_1"
-    "section6 section6 section7"
+    "section6_2 section6 section7"
     "blank blank blank";
     grid-template-rows: 50% 50% 50% 50% 5%;
 	  grid-template-columns: 1fr 1fr 1fr;
@@ -355,6 +355,17 @@ span{
   min-width: 380px;
   -ms-overflow-style: none;
 }
+#section6_2{
+  background: rgb(245, 244, 244);
+  grid-area: section6_2;
+  word-break:break-all;
+  text-align: center;
+  border-radius: 10px;
+  min-width: 380px;
+  -ms-overflow-style: none;
+}
+
+
 #section7{
   background: rgb(245, 244, 244);
   grid-area: section7;
@@ -384,6 +395,36 @@ span{
     border-radius: 10px;
     /* filter: drop-shadow(5px 5px 5px #000); */
 }
+.sh_sec6_1{
+  width: 27vw;
+  height: 44vh;
+  margin: 20px;
+  border-radius: 10px;
+}
+.sh_sec6_2{
+  width: 27vw;
+  height: 44vh;
+  margin: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+.sh_sec6_3{
+  width: 27vw;
+  height: 44vh;
+  margin: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+.sh_sec6_4{
+  width: 27vw;
+  height: 44vh;
+  margin: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
 
 .description{
     font-size: 25px;
@@ -566,3 +607,44 @@ span{
   z-index: 499; /* was 1000 */
   pointer-events: none;
   }
+
+
+  .button_sec6{
+    width: 20vw; 
+    height: 100px; 
+    background-color: white; 
+    margin: 10px;  
+    line-height: 100px;
+    border-radius: 20px;
+    font-size:1.5vw;
+    cursor: pointer;
+  }
+
+
+li{
+  list-style-type :circle;
+}
+
+.bubble-right {
+  display: inline-block;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.bubble-right:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  border-style: solid;
+  transition-duration: 0.3s;
+  transition-property: right;
+  top: calc(50% - 10px);
+  right: 0;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent transparent transparent #808080;
+}
+.bubble-right:hover:before {
+  right: -10px;
+}
