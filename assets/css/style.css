@@ -349,7 +349,6 @@ span{
   height: 44vh;
   margin: 20px;
   border-radius: 10px;
-  min-width: 380px;
 }
 .sh_sec6_2{
   width: 23vw;
@@ -373,6 +372,7 @@ span{
   margin: 20px;
   border-radius: 10px;
   display: none;
+  min-width: 380px;
 }
 .description{
     font-size: 25px;
