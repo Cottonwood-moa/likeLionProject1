@@ -341,7 +341,7 @@ span{
 .chart_day{
     width: 25vw;
     height: 35vh;
-    margin: 1%;
+    margin: 20px;
     border-radius: 10px;
 }
 .sh_sec6_1{
@@ -356,6 +356,7 @@ span{
   margin: 20px;
   border-radius: 10px;
   display: none;
+  min-width: 380px;
 }
 .sh_sec6_3{
   width: 23vw;
@@ -363,6 +364,7 @@ span{
   margin: 20px;
   border-radius: 10px;
   display: none;
+  min-width: 380px;
 }
 .sh_sec6_4{
   width: 23vw;
@@ -370,6 +372,7 @@ span{
   margin: 20px;
   border-radius: 10px;
   display: none;
+  min-width: 380px;
 }
 .description{
     font-size: 25px;
